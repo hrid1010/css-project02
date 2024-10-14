@@ -193,8 +193,8 @@ body {
     padding: 50px 80px;
     text-align: center;
 
-    & p {
-      margin-top: 15px;
+    .p-7{
+      margin-top: 25px;
       margin-bottom: 35px;
     }
 
@@ -427,7 +427,8 @@ body {
       grid-area: 2 / 3 / 4 / 5;
       justify-self: end;
 
-      .b-1, .b-2{
+      .b-1,
+      .b-2 {
         margin: 8px 0px;
         float: right;
       }
@@ -515,10 +516,11 @@ body {
         border-bottom: 2px dashed gray;
       }
 
-      & p {
-        margin-top: 0px;
+      .p-7{
+        margin-top: 15px;
         margin-bottom: 80px;
       }
+
 
       .blank {
         color: white;
@@ -534,29 +536,66 @@ body {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
 
+    padding: 8px;
+
     align-items: center;
     justify-content: center;
 
     .p-5 {
       font-size: 25px;
       background-color: rgba(97, 95, 95, 0.067);
+      border-radius: 10px;
     }
 
     .buy {
-      grid-area: 1 / 1 / 2 / 2;
-      padding-right: 10px;
       border-right: none;
-      border-bottom: 1px solid black;
-      width: 100%;
+      padding-right: 0px;
     }
 
     .sell {
-      grid-area: 2 / 1 / 3 / 2;
-      padding-left: 10px;
+      padding-left: 0px;
+      border-top: 2px dashed gray;
+    }
+
+    .buy,
+    .sell {
+      .div-1 {
+        .div-2 {
+          padding: 5px;
+
+          & img {
+            grid-column: 1 / 2;
+            width: 50px;
+            height: 50px;
+          }
+
+          .text {
+            & p {
+              font-size: 15px;
+              font-weight: 600;
+            }
+
+            .p-2 {
+              text-align: left;
+            }
+
+            .p-3 {
+              text-align: right;
+            }
+
+            .p-4 {
+              padding-right: 35px;
+            }
+          }
+        }
+      }
+
+      .view-button {
+        padding: 10px 0px 35px 0px;
+      }
     }
   }
   .footer-section {
-
     height: auto;
 
     .footer-up {
