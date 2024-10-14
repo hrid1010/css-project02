@@ -1,0 +1,585 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1260px;
+  margin: 0px auto;
+  font-weight: 550;
+}
+
+.b-everywhere {
+  & button {
+    border: none;
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-weight: 550;
+  }
+}
+
+/* nav-bar start */
+.nav-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.4fr 0.2fr;
+  padding: 30px 8px 0px 12px;
+  align-items: center;
+  justify-items: center;
+
+  /* background-image: url(images/BG.png); */
+  background-color: #ffffff;
+
+  border-bottom: 1px solid black;
+
+  .logo {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+  }
+
+  .menu {
+    & button {
+      background-color: inherit;
+      font-size: 16px;
+      margin: 0px;
+    }
+  }
+
+  .button {
+    .b-1 {
+      color: black;
+      background-color: #f1f1f1;
+    }
+
+    .b-2 {
+      color: white;
+      background-color: black;
+    }
+  }
+}
+/* nav-bar end */
+
+/* offer-section start */
+.offer-section {
+  display: grid;
+  grid-template-columns: 20% 30% 30% 20%;
+  grid-template-rows: 30% 20% 20% 30%;
+
+  height: 400px;
+
+  border-bottom: 1px solid black;
+
+  & img {
+    height: inherit;
+    width: 1260px;
+  }
+
+  .why {
+    grid-area: 4 / 2 / 5 / 4;
+    margin: 60px 0px 30px 0px;
+    align-self: center;
+    justify-self: center;
+
+    & button {
+      background-color: transparent;
+      border: 1px solid white;
+      color: white;
+    }
+  }
+
+  .offer-box {
+    grid-area: 2 / 2 / 4 / 4;
+    align-self: center;
+    background-color: white;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0 0 8px black;
+
+    height: 200px;
+
+    & h2 {
+      text-align: center;
+      margin: 25px 0px;
+    }
+
+    & select,
+    input {
+      border: none;
+      background-color: #ececec;
+      padding: 6px 12px;
+      text-align: center;
+      font-weight: 550;
+    }
+
+    .select {
+      display: grid;
+      grid-template-columns: 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.2fr;
+      grid-template-rows: 1fr 1fr;
+      grid-column-gap: 10px;
+      grid-row-gap: 12px;
+
+      .currency-1 {
+        grid-area: 1 / 2 / 2 / 3;
+      }
+
+      .buy {
+        grid-area: 1 / 3 / 2 / 4;
+      }
+
+      .payment {
+        grid-area: 1 / 4 / 2 / 5;
+      }
+
+      .currency-2 {
+        grid-area: 1 / 5 / 2 / 6;
+      }
+
+      .money {
+        grid-area: 2 / 2 / 3 / 5;
+      }
+
+      .find-button {
+        grid-area: 2 / 5 / 3 / 6;
+
+        border: none;
+        border-radius: 20px;
+        padding: 4px 25px;
+
+        background-color: #00ebc7;
+      }
+    }
+  }
+}
+/* offer-section end */
+
+/* coins-section start */
+.coins-section {
+  background-color: #fde24f;
+  padding: 30px 70px;
+
+  border-bottom: 1px solid black;
+
+  & p {
+    text-align: center;
+    margin: 12px 0px;
+  }
+
+  .coins {
+    text-align: center;
+
+    & img {
+      width: 100%;
+    }
+  }
+}
+/* coins-section end */
+
+/* features-section start */
+.features-section {
+  border-bottom: 1px solid black;
+  background-color: white;
+
+  & h2 {
+    margin: 50px 40px;
+  }
+
+  .features {
+    display: flex;
+    padding: 50px 80px;
+    text-align: center;
+
+    & p {
+      margin-top: 15px;
+      margin-bottom: 35px;
+    }
+
+    .blank {
+      color: gray;
+      margin-top: 80px;
+    }
+  }
+
+  .see-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    & button {
+      background-color: transparent;
+      border: 1px solid black;
+    }
+  }
+}
+/* features-section end */
+
+/* method-section start */
+.method-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0px 30px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid black;
+
+  .p-5 {
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .buy {
+    border-right: 1px solid black;
+    padding-right: 40px;
+  }
+
+  .sell {
+    padding-left: 40px;
+  }
+
+  .buy,
+  .sell {
+    background-color: #f8f8f8;
+    display: grid;
+    grid-template-rows: 2, 1fr;
+    row-gap: 30px;
+
+    .div-1 {
+      display: grid;
+      grid-template-rows: 3, 1fr;
+      row-gap: 20px;
+
+      .div-2 {
+        display: grid;
+        grid-template-columns: 0.2fr 1fr;
+        align-items: center;
+
+        border: 1px solid black;
+        border-radius: 8px;
+
+        padding: 12px;
+
+        & img {
+          grid-column: 1 / 2;
+        }
+
+        .text {
+          grid-column: 2 / 3;
+
+          display: grid;
+          grid-template-columns: 3, 1fr;
+
+          & p {
+            font-size: 18px;
+            font-weight: 600;
+          }
+
+          .p-1 {
+            grid-column: 1 / 2;
+          }
+
+          .p-2 {
+            grid-column: 2 / 3;
+          }
+
+          .p-3 {
+            grid-column: 3 / 4;
+          }
+
+          .p-4 {
+            padding-right: 45px;
+          }
+        }
+      }
+    }
+
+    .view-button {
+      margin: 0px auto;
+      padding: 10px 0px 45px 0px;
+      & button {
+        background-color: black;
+        color: white;
+        border-radius: 8px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+/* method-section end */
+
+/* crypto-section start */
+.crypto-section {
+  background-color: #cfbaff;
+  display: grid;
+  grid-template-rows: 3, 1fr;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
+  text-align: center;
+  word-spacing: 5px;
+
+  border-bottom: 1px solid black;
+
+  .crypto {
+    padding: 60px 10px;
+
+    grid-area: 1 / 2 / 2 / 3;
+
+    & p {
+      font-size: 50px;
+    }
+  }
+
+  .crypto-button {
+    grid-area: 2 / 2 / 3 / 3;
+    padding-bottom: 30px;
+
+    & button {
+      background-color: black;
+      color: white;
+      padding: 8px 30px;
+      font-size: 17px;
+    }
+  }
+}
+/* crypto-section end */
+
+/* footer-section start */
+.footer-section {
+  height: 460px;
+  background-color: black;
+  color: white;
+  font-weight: 400;
+
+  display: grid;
+  grid-template-rows: 0.7fr 0.1fr;
+
+  .footer-up {
+    border-bottom: 1px solid white;
+    grid-row: 1 / 2;
+
+    padding: 90px 140px;
+
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr 2fr;
+
+    height: 360px;
+
+    .f-div-1 {
+      grid-column: 1 / 2;
+    }
+
+    .f-div-2 {
+      grid-column: 2 / 3;
+    }
+
+    .f-div-3 {
+      grid-column: 3 / 4;
+    }
+
+    .f-div-4 {
+      grid-column: 4 / 5;
+    }
+
+    .f-div-5 {
+      grid-column: 5 / 6;
+      height: 100px;
+      width: 100px;
+    }
+
+    & div {
+      & h3 {
+        margin-bottom: 20px;
+      }
+
+      & p {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  .footer-down {
+    grid-row: 2 / 3;
+    padding: 20px 25px 20px 25px;
+
+    text-align: center;
+  }
+}
+/* footer-section end */
+
+/* responsive for mobile */
+@media (max-device-width: 767px) {
+  .nav-bar {
+    grid-template-rows: repeat(3, minmax(0, 0.5fr));
+    padding: 25px 8px 0px 10px;
+
+    .logo {
+      grid-column: 1 / 4;
+    }
+
+    .menu {
+      grid-area: 2 / 1 / 4 / 3;
+      justify-self: start;
+    }
+
+    .button {
+      grid-area: 2 / 3 / 4 / 5;
+      justify-self: end;
+
+      .icon {
+        grid-area: 1 / 3 / 2 / 4;
+      }
+    }
+  }
+
+  .offer-section {
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 15% 35% 35% 15%;
+
+    height: 400px;
+
+    & img {
+      width: 767px;
+    }
+
+    .why {
+      grid-area: 4 / 2 / 5 / 4;
+      margin: 15px 0px 20px 0px;
+      align-self: start;
+      justify-self: center;
+    }
+
+    .offer-box {
+      grid-area: 2 / 2 / 4 / 4;
+
+      height: 250px;
+      padding-left: 6px;
+      & select,
+      input {
+        border: none;
+        background-color: #ececec;
+        padding: 6px 12px;
+        text-align: center;
+        font-weight: 550;
+      }
+
+      .select {
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+        .currency-1 {
+          grid-area: 1 / 1 / 2 / 2;
+        }
+
+        .buy {
+          grid-area: 1 / 2 / 2 / 3;
+        }
+
+        .payment {
+          grid-area: 2 / 1 / 3 / 2;
+        }
+
+        .currency-2 {
+          grid-area: 2 / 2 / 3 / 3;
+        }
+
+        .money {
+          grid-area: 3 / 1 / 4 / 2;
+        }
+
+        .find-button {
+          grid-area: 3 / 2 / 4 / 3;
+        }
+      }
+    }
+  }
+
+  .coins-section {
+    padding: 25px 50px;
+  }
+
+  .features-section {
+    .features {
+      flex-direction: column;
+      padding: 20px 50px;
+
+      .secured,
+      .newbie {
+        border-bottom: 2px dashed gray;
+      }
+
+      & p {
+        margin-top: 0px;
+        margin-bottom: 80px;
+      }
+
+      .blank {
+        color: white;
+      }
+    }
+
+    .see-more {
+      margin-top: 15px;
+    }
+  }
+
+  .method-section {
+    grid-template-rows: repeat(2, 1fr);
+
+    .p-5 {
+      font-size: 25px;
+      background-color: rgba(97, 95, 95, 0.067);
+    }
+
+    .buy {
+      grid-row: 1 / 2;
+      padding-right: 10px;
+      border-right: none;
+      border-bottom: 1px solid black;
+    }
+
+    .sell {
+      grid-row: 2 / 3;
+      padding-left: 10px;
+    }
+  }
+  .footer-section {
+    height: 720px;
+
+    .footer-up {
+      grid-row: 1 / 2;
+
+      padding: 10px 30px 0px;
+
+      grid-template-columns: 1fr 1fr 1fr 0px;
+      grid-template-rows: 0.1fr 1fr;
+
+      height: 430px;
+
+      .f-div-1 {
+        grid-area: 1 / 1 / 2 / 5;
+        align-self: center;
+      }
+
+      .f-div-2 {
+        grid-area: 2 / 1 / 3 / 2;
+      }
+
+      .f-div-3 {
+        grid-area: 2 / 2 / 3 / 5;
+        padding-left: 15px;
+      }
+
+      .f-div-4 {
+        grid-area: 2 / 4 / 3 / 5;
+        padding-left: 8px;
+      }
+    }
+
+    .footer-down {
+      grid-row: 2 / 3;
+      padding: 10px 25px 0px 25px;
+    }
+  }
+}
