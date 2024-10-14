@@ -583,8 +583,8 @@ body {
       }
 
       .f-div-4 {
-        grid-area: 2 / 4 / 3 / 5;
-        padding-left: 8px;
+        grid-area: 2 / 3 / 3 / 4;
+        padding-left: 60px;
       }
     }
 
