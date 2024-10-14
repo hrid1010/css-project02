@@ -445,7 +445,8 @@ body {
     height: 400px;
 
     & img {
-      width: 767px;
+      width: 100%;
+      grid-area: 1 / 1 / 5 / 5;
     }
 
     .why {
