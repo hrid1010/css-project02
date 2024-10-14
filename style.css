@@ -567,7 +567,7 @@ body {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 0.1fr 1fr;
 
-      height: 400px;
+      height: auto;
 
       .f-div-1 {
         grid-area: 1 / 1 / 2 / 4;
