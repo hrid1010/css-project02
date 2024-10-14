@@ -110,6 +110,7 @@ body {
     & select,
     input {
       border: none;
+      border-radius: 6px;
       background-color: #ececec;
       padding: 6px 12px;
       text-align: center;
@@ -120,8 +121,8 @@ body {
       display: grid;
       grid-template-columns: 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.2fr;
       grid-template-rows: 1fr 1fr;
-      grid-column-gap: 10px;
-      grid-row-gap: 12px;
+      grid-column-gap: 8px;
+      grid-row-gap: 10px;
 
       .currency-1 {
         grid-area: 1 / 2 / 2 / 3;
@@ -460,8 +461,10 @@ body {
     .offer-box {
       grid-area: 2 / 2 / 4 / 4;
 
+      padding: 0px 10px;
+      width: fit-content;
+
       height: 250px;
-      padding-left: 6px;
       & select,
       input {
         border: none;
@@ -472,7 +475,7 @@ body {
       }
 
       .select {
-        grid-template-columns: 0.5fr 0.5fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
 
         .currency-1 {
@@ -497,6 +500,8 @@ body {
 
         .find-button {
           grid-area: 3 / 2 / 4 / 3;
+          
+          border-radius: 6px;
         }
       }
     }
@@ -542,9 +547,10 @@ body {
     justify-content: center;
 
     .p-5 {
+      padding-left: 10px;
       font-size: 25px;
       background-color: rgba(97, 95, 95, 0.067);
-      border-radius: 10px;
+      border-radius: 12px;
     }
 
     .buy {
