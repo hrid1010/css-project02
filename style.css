@@ -557,7 +557,7 @@ body {
   }
   .footer-section {
 
-    height: 500px;
+    height: auto;
 
     .footer-up {
       grid-row: 1 / 2;
@@ -591,7 +591,7 @@ body {
 
     .footer-down {
       grid-row: 2 / 3;
-      padding: 10px 15px 0px 15px;
+      padding: 10px 15px 15px 15px;
     }
   }
 }
